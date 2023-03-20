@@ -10,7 +10,19 @@ function srednica($promien){
 }
 echo srednica(5) . "<br>";
 // Zadanie 1.3
-function cenzura($zdanie){
+function cenzura($zdanie, $niepozadane_slowa) {
+    $slowawzdaniu = explode(" ", $zdanie);
+    foreach($slowawzdaniu as &$slowo) {
+      if(in_array($slowo, $niepozadane_slowa)) {
+        $slowo = str_repeat("*", strlen($slowo));
+      }
+    }
+    return implode(" ", $slowawzdaniu);
+  }
+  $zdanie = "dsada cenzura gs słowo asds dupa";
+$niepozadane_slowa = array("słowo", "cenzura","dupa");
+
+echo cenzura($zdanie, $niepozadane_slowa);
 
 }
 $slowa=array("dupa","aaaas","ffasda");
