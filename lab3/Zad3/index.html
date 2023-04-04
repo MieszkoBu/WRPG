@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zadanie 3</title>
+</head>
+<body>
+	<h2>Zadanie 3</h2>
+	<form action="zad3.php" method="get">
+		<label>Ścieżka:</label>
+		<input type="text" name="sciezka"><br>
+		<label>Nazwa katalogu:</label>
+		<input type="text" name="nazwa_katalogu"><br>
+		<label>Rodzaj operacji:</label>
+		<select name="rodzaj_operacji">
+			<option value="read">Odczyt</option>
+			<option value="delete">Usuwanie</option>
+			<option value="create">Tworzenie</option>
+		</select><br>
+		<input type="submit" name="submit" value="Wykonaj">
+	</form>
+</body>
+</html>
