@@ -1,0 +1,4 @@
+http://ppe.pl;ppe
+http://gry-online.pl;gry-online
+http://eurogamer.pl;eurogamer
+http://youtube.com;youtube
